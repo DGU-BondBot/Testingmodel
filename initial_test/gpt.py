@@ -17,7 +17,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 model = ChatOpenAI()
 #data_loader = UnstructuredWebPageLoader("https://namu.wiki/w/%EC%A7%91%EB%8B%A8%EC%A3%BC%EC%9D%98")
-data_loader = UnstructuredFileLoader ("files/wiki.txt")
+data_loader = UnstructuredFileLoader ("../files/wiki.txt")
 cache_dir = LocalFileStore("./.cache/")
 
 splitter = CharacterTextSplitter.from_tiktoken_encoder(

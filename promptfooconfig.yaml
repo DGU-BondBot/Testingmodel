@@ -1,0 +1,10 @@
+prompts: "Write a joke about {{topic}}"
+
+providers: ollama:completion:llama3
+
+tests:
+  - vars:
+      topic: bananas
+    assert:
+      - type: contains-any
+        value: ["bananas", "banana"]

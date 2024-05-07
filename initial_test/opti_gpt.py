@@ -18,7 +18,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 model = ChatOpenAI()
 
 # Load data from file
-data_loader = UnstructuredFileLoader("files/wiki.txt")
+data_loader = UnstructuredFileLoader("../files/wiki.txt")
 
 # Cache directory for storing embeddings
 cache_dir = LocalFileStore("./.cache/")
