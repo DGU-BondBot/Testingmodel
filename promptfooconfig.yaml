@@ -6,5 +6,6 @@ tests:
   - vars:
       topic: bananas
     assert:
-      - type: contains-any
-        value: ["bananas", "banana"]
+      - type: llm-rubric
+        value: is a funny joke
+        provider: ollama:completion:llama3
