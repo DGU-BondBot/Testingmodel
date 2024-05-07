@@ -1,4 +1,4 @@
-prompts: "Write a joke about {{topic}}"
+prompts: "Write a joke about {{topic}}. Just say the joke"
 
 providers: ollama:completion:llama3
 
